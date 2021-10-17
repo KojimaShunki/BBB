@@ -1,5 +1,11 @@
+@charset "UTF-8";
 html {
   font-size: 100%;
+}
+
+body {
+  color: #333;
+  font-family: "游ゴシック";
 }
 
 a {
@@ -235,5 +241,97 @@ header #humberger-navigation .btn::after {
   position: absolute;
   top: 26px;
   right: 30px;
+}
+
+section {
+  margin-top: 60px;
+  padding-top: 60px;
+  text-align: center;
+}
+
+section .sec-title {
+  font-size: 2.25rem;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+section .sec-title::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: #333;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+section .content {
+  margin-top: 80px;
+}
+
+#reason .content {
+  background-color: #FF2A2A;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 40px 0;
+}
+
+#reason .content .slideConts {
+  width: 50%;
+  height: 200px;
+  margin: 40px auto;
+  background-color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#reason .content .slideConts img {
+  height: 60px;
+  margin-right: 30px;
+}
+
+#reason .content .slideConts .text h3 {
+  font-size: 1.75rem;
+  color: #FF2A2A;
+}
+
+#reason .content .slideConts .text p {
+  font-size: 1.125rem;
+}
+
+#reason .content .slideContsL {
+  border-radius: 0 20px 20px 0;
+  -webkit-transform: translate(-700px, 0);
+          transform: translate(-700px, 0);
+  margin-left: 0;
+}
+
+#reason .content .slideContsR {
+  border-radius: 20px 0 0 20px;
+  -webkit-transform: translate(700px, 0);
+          transform: translate(700px, 0);
+  margin-right: 0;
+}
+
+#reason .content .slideContsL.show {
+  -webkit-transform: translate(0, 0) !important;
+          transform: translate(0, 0) !important;
+}
+
+#reason .content .slideContsR.show {
+  -webkit-transform: translate(0, 0) !important;
+          transform: translate(0, 0) !important;
 }
 /*# sourceMappingURL=styles.css.map */
