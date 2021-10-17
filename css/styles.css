@@ -8,6 +8,10 @@ body {
   font-family: "游ゴシック";
 }
 
+li {
+  list-style-type: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -333,5 +337,87 @@ section .content {
 #reason .content .slideContsR.show {
   -webkit-transform: translate(0, 0) !important;
           transform: translate(0, 0) !important;
+}
+
+#voice .content {
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#voice .content .fadeConts {
+  width: 100%;
+  margin: 80px auto;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: .3s;
+  transition: .3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#voice .content .fadeConts .pic span {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #CCC;
+}
+
+#voice .content .fadeConts .pic span img {
+  width: 120px;
+}
+
+#voice .content .fadeConts .pic span li {
+  font-size: 0.75rem;
+}
+
+#voice .content .fadeConts .text {
+  background-color: #E9F1FB;
+  border-radius: 15px;
+  max-width: 60%;
+  padding: 20px;
+  position: relative;
+}
+
+#voice .content .fadeConts .text::before {
+  content: "";
+  border: 15px solid transparent;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+#voice .content .fadeConts.show {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#voice .content .left-side .pic {
+  margin-right: 25px;
+}
+
+#voice .content .left-side .text::before {
+  bottom: 30px;
+  left: -30px;
+  border-right-color: #E9F1FB;
+}
+
+#voice .content .right-side {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+#voice .content .right-side .pic {
+  margin-left: 25px;
+}
+
+#voice .content .right-side .text::before {
+  bottom: 30px;
+  right: -30px;
+  border-left-color: #E9F1FB;
 }
 /*# sourceMappingURL=styles.css.map */

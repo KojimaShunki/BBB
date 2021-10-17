@@ -1,5 +1,6 @@
 $main-color : #FF2A2A;
 $font-color : #333;
+$chat-color : #E9F1FB;
 
 html {
   font-size: 100%;
@@ -8,6 +9,10 @@ html {
 body {
   color: $font-color;
   font-family: "游ゴシック";
+}
+
+li {
+  list-style-type: none;
 }
 
 a {
@@ -323,6 +328,87 @@ section {
 
     .slideContsR.show {
       transform: translate(0, 0) !important;
+    }
+  }
+}
+
+#voice {
+  .content {
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .fadeConts {
+      width: 100%;
+      margin: 80px auto;
+      transform: scale(0);
+      transition: .3s;
+      display: flex;
+
+      .pic {
+        span {
+          display: inline-block;
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          background-color: #CCC;
+         
+
+          img {
+            width: 120px;
+          }
+
+          li {
+            font-size: 0.75rem;
+          }
+        }
+      }
+
+      .text {
+        background-color: $chat-color;
+        border-radius: 15px;
+        max-width: 60%;
+        padding: 20px;
+        position: relative;
+
+        &::before {
+          content: "";
+          border: 15px solid transparent;
+          position: absolute;
+          width: 0;
+          height: 0;
+        }
+      }
+    }
+
+    .fadeConts.show {
+      transform: scale(1);
+    }
+
+    .left-side {
+      .pic {
+        margin-right: 25px;
+      }
+
+      .text::before {
+        bottom: 30px;
+        left: -30px;
+        border-right-color: $chat-color;
+     }
+    }
+
+    .right-side {
+      flex-direction: row-reverse;
+
+      .pic {
+        margin-left: 25px;
+      }
+
+      .text::before {
+        bottom: 30px;
+        right: -30px;
+        border-left-color: $chat-color;
+      }
     }
   }
 }
