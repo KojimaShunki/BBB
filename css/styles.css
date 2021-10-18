@@ -14,6 +14,7 @@ li {
 
 a {
   text-decoration: none;
+  color: #333;
 }
 
 img {
@@ -213,6 +214,7 @@ header #humberger-navigation .btn::after {
 .mainvisual .text h1 {
   font-size: 3rem;
   margin-bottom: 30px;
+  text-shadow: 0 5px 5px #fff;
 }
 
 .mainvisual .text a {
@@ -525,5 +527,31 @@ section .content {
 
 footer {
   background-color: #E8E8E8;
+  padding: 60px 0 20px;
+}
+
+footer .content {
+  max-width: 860px;
+  margin: 0 auto 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .content li p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+footer .content li ul {
+  text-indent: 0.5rem;
+}
+
+footer > p {
+  text-align: center;
+  font-size: 0.625rem;
 }
 /*# sourceMappingURL=styles.css.map */
