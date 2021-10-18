@@ -369,6 +369,7 @@ section {
         border-radius: 15px;
         max-width: 60%;
         padding: 20px;
+        text-align: left;
         position: relative;
 
         &::before {
@@ -442,7 +443,64 @@ section {
       padding: 60px;
       border-radius: 20px;
       margin-bottom: 32px;
+
+      h3 {
+        margin-bottom: 15px;
+        font-size: 1.75rem;
+      }
+
+      h4 {
+        margin-bottom: 30px;
+        font-size: 1.125rem;
+      }
+
+      p {
+        text-align: left;
+      }
     }
   }
 }
 
+#entry {
+  margin: 120px 0;
+
+  .content {
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+  
+    p {
+      font-size: 1.125rem;
+      font-weight: lighter;
+      margin-bottom: 40px;
+    }
+
+    a {
+      display: inline-block;
+      font-size: 1.75rem;
+      font-weight: bold;
+      color: #fff;
+      background-color: $main-color;
+      width: 100%;
+      padding: 15px 0;
+      border: 3px solid $main-color;
+      border-radius: 45px;
+      transition: all 0.2s;
+
+      &:hover {
+        color: $main-color;
+        background-color: #fff;
+        // border: 3px solid $main-color;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #E8E8E8;
+}
