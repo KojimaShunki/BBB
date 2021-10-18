@@ -412,3 +412,37 @@ section {
     }
   }
 }
+
+#summary {
+  padding-bottom: 30px;
+  background: url(../img/bg.gif) repeat;
+  animation:fall 10s infinite linear;
+
+  @keyframes fall {
+    0% {
+      background-position: 0 0;
+    }
+  
+    100% {
+      background-position: -700px 700px;
+    }
+  }
+
+  .content {
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    li {
+      background-color: #fff;
+      width: 400px;
+      padding: 60px;
+      border-radius: 20px;
+      margin-bottom: 32px;
+    }
+  }
+}
+
