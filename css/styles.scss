@@ -26,15 +26,13 @@ img {
 
 header {
 
-  > a {
-    display: inline-block;
-    padding-top: 50px;
-    padding-left: 40px;
+  .site-title{
+    line-height: 0;
     
-
-    .site-title {
-      line-height: 0;
-      z-index: 30;
+    a {
+      display: inline-block;
+      padding-top: 50px;
+      padding-left: 40px;
 
       img {
         width: 100px;
@@ -215,7 +213,10 @@ header {
       100% { opacity: 0; }
     }
 
-    img.img1{animation-delay: -3s;}
+    img.img1{
+      animation-delay: -3s;
+      opacity: 1;
+    }
     img.img2{animation-delay: 3s;}
     img.img3{animation-delay: 9s;}
   }

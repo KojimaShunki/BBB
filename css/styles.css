@@ -21,18 +21,17 @@ img {
   max-width: 100%;
 }
 
-header > a {
+header .site-title {
+  line-height: 0;
+}
+
+header .site-title a {
   display: inline-block;
   padding-top: 50px;
   padding-left: 40px;
 }
 
-header > a .site-title {
-  line-height: 0;
-  z-index: 30;
-}
-
-header > a .site-title img {
+header .site-title a img {
   width: 100px;
   z-index: 30;
 }
@@ -246,6 +245,7 @@ header #humberger-navigation .btn::after {
 .mainvisual .bg-img img.img1 {
   -webkit-animation-delay: -3s;
           animation-delay: -3s;
+  opacity: 1;
 }
 
 .mainvisual .bg-img img.img2 {
