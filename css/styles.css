@@ -613,9 +613,9 @@ footer > p {
 }
 
 @media (max-width: 900px) {
-  header > a {
-    padding-top: 25px;
-    padding-left: 25px;
+  header .site-title a {
+    margin-top: 25px;
+    margin-left: 25px;
   }
   header .humberger-menu {
     width: 75px;
@@ -647,6 +647,7 @@ footer > p {
   .mainvisual .bg-img {
     width: 100%;
     height: 300px;
+    top: 4px;
   }
   .mainvisual .bg-img img {
     height: 300px;
